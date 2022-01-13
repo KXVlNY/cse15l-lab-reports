@@ -1,2 +1,1 @@
-Hi everyone!
-CSE 15L
+It is only week 2, but I am already done..
