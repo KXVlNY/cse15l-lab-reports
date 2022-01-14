@@ -52,11 +52,16 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
   ![Image](8.jpg)
 
 * Lastly, log into **ieng6** with **ssh** again, and use **ls**. You should see the file there in your home directory:
-![Imgage](9.jpg)
-  
+![Image](9.jpg)
+
+* Now you can run it on the **ieng6** computer using **javac** and **java** :)  
 >Setting an SSH Key
-*
-*
+* Set up SSH keys on your computer:
+![Image](10.jpg)
+  
+* If you're using Windows, you must run Command Prompt as administrators and follow these steps:
+![Image](11.jpg)
+
 *
 >Optimizing Remote Running
 *
