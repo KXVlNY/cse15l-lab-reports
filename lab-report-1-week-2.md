@@ -2,7 +2,7 @@
 ==========================
 **Lab Report #1**
 --------------------------
-> **Installing *VSCode* **
+> **Installing** ***VSCode***
 * Go to the **Visual Studio Code** website: (https://code.visualstudio.com/)
 * Download and install it on your computer **(Choose your *OS*)**
 * Once it is installed, you should be able to open a window like this: 
