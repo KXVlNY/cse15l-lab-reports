@@ -22,7 +22,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 * Once you are logged in, you shoud see something like this:
 ![Image](2.jpg)
 
-> Trying Some Commands
+> **Trying Some Commands**
 * Try some commands both on your computer and remote server(after ssh-ing): **cd**, **ls**, **pwd**, **mkdir**
   1. cd ~
   2. cd
@@ -38,7 +38,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ![Image](4.jpg)
 ![Image](5.jpg)
 
-> Moving Files with scp
+> **Moving Files with scp**
 * Create a file on your computer called **WhereAmI.java** and put the following contents into it:
 ![Image](6.jpg)
   
@@ -55,7 +55,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ![Image](9.jpg)
 
 * Now you can run it on the **ieng6** computer using **javac** and **java** :)  
->Setting an SSH Key
+>**Setting an SSH Key**
 * Set up SSH keys on your computer:
 ![Image](10.jpg)
   
@@ -72,7 +72,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ![Image](14.jpg)
 ![Image](15.jpg)
 
->Optimizing Remote Running
+>**Optimizing Remote Running**
 * Make a ***local edit*** to **WhereAmI.java** (On your computer):
 ![Image](18.jpg)
 
