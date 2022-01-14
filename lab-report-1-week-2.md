@@ -45,9 +45,15 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 * Run it using javac and java on your computer:
 ![Image](7.jpg)
   
-* Then, in the terminal from the directory where you made this file, run this command (as usually, using your username): **scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/**
-![Image](8.jpg)
+* Then, in the terminal from the directory where you made this file, run this command (as usually, using your username): 
 
+  **scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/**
+  
+  ![Image](8.jpg)
+
+* Lastly, log into **ieng6** with **ssh** again, and use **ls**. You should see the file there in your home directory:
+![Imgage](9.jpg)
+  
 >Setting an SSH Key
 *
 *
