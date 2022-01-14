@@ -23,9 +23,21 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ![Image](2.jpg)
 
 > Trying Some Commands
-*
-*
-*
+* Try some commands both on your computer and remote server(after ssh-ing): **cd**, **ls**, **pwd**, **mkdir**
+  1. cd ~
+  2. cd
+  3. ls -lat
+  4. ls -a
+  5. ls <directory> where <directory> is /home/linux/ieng6/cs15lwi22/cs15lwi22abc, where the abc is one of the other group members’ username
+  6. cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/
+  7. cat /home/linux/ieng6/cs15lwi22/public/hello.txt
+* On your computer:
+![Image](3.jpg)
+
+* On the remote server(after ssh-ing):
+![Image](4.jpg)
+![Image](5.jpg)
+
 > Moving Files with scp
 *
 *
