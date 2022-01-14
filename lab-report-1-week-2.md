@@ -73,6 +73,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ![Image](15.jpg)
 
 >Optimizing Remote Running
-*
-*
-*
+* Make a ***local edit*** to **WhereAmI.java** (On your computer)
+![Image](17.jpg)
+  
+* Copy a file to the remote server and running it on the remote server:
+![Image](16.jpg)
