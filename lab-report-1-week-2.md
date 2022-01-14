@@ -39,7 +39,9 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ![Image](5.jpg)
 
 > Moving Files with scp
-*
+* Create a file on your computer called **WhereAmI.java** and put the following contents into it:
+![Image](6.jpg)
+  
 *
 *
 >Setting an SSH Key
