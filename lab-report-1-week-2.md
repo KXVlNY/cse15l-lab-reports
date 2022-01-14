@@ -59,10 +59,19 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 * Set up SSH keys on your computer:
 ![Image](10.jpg)
   
-* If you're using Windows, you must run Command Prompt as administrators and follow these steps:
+* If you're using **Windows**, you must run Command Prompt as **administrators** and follow these steps:
 ![Image](11.jpg)
 
-*
+* Only for the **Windows** users, follow the extra **ssh-add** steps:
+![Image](12.jpg)
+  
+* Then, copy the public (not the private) key to the **.ssh** directory of your user account on the server:
+![Image](13.jpg)
+
+* Now, you should be able to **ssh** or **scp** from this client to the server without entering your password.
+![Image](14.jpg)
+![Image](15.jpg)
+
 >Optimizing Remote Running
 *
 *
