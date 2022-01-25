@@ -1,18 +1,18 @@
-**Kevin Kang (A17230649)**
-==========================
-**Lab Report #1**
---------------------------
-> **Installing** ***VSCode***
-* Go to the **Visual Studio Code** website: [Link](https://code.visualstudio.com/)
+># **A17230649** 
+># **Kevin Kang** 
+># **Lab Report #1**
+-------------------------------------------------------------------------------------
+# **Installing VSCode**
+* Go to the **Visual Studio Code** website: [Visual Studio Code Website](https://code.visualstudio.com/)
 * Download and install it on your computer **(Choose your *OS*)**
 * Once it is installed, you should be able to open a window like this: 
 ![Image](1.jpg)
 
-> **Remotely Connecting**
-* If you use **Windows**, you **MUST** install a program called **OpenSSH**: [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
-* Search your course-specific account for CSE15L and **RESET** your password for that account here: [Link](https://sdacs.ucsd.edu/~icc/index.php)
+# **Remotely Connecting**
+* If you use **Windows**, you **MUST** install a program called **OpenSSH**: [Install OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+* Search your course-specific account for CSE15L and **RESET** your password for that account here: [CSE15L Account Setup](https://sdacs.ucsd.edu/~icc/index.php)
 * The reset can take anywhere **from 1 minute to 20 minutes** to start working, so please be patient. Your lab account should look like this format: **cs15lwi22zz@ieng6.ucsd.edu** (replace **"zz"** with the letters in yours)
-* Open a terminal in the **VSCode** (Ctrl or Command + **`**, or use the **Terminal → New Terminal menu option**).
+* Open a terminal in the **VSCode** (**Ctrl or Command + `**, or use the **Terminal → New Terminal menu option**).
 * Type ```ssh cs15lwi22zz@ieng6.ucsd.edu```on the terminal (Replace ```zz``` with the letters in yours)
 * Since this is your first time, you likely get a warning message like this: 
 ```
@@ -24,7 +24,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 * Once you are logged in, you shoud see something like this:
 ![Image](2.jpg)
 
-> **Trying Some Commands**
+# **Trying Some Commands**
 * Try some commands both on your computer and remote server: ```cd```, ```ls```, ```pwd```, ```mkdir```
   1. ```cd ~```
   2. ```cd```
@@ -40,7 +40,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ![Image](4.jpg)
 ![Image](5.jpg)
 
-> **Moving Files with scp**
+# **Moving Files with scp**
 * Create a file on your computer called ```WhereAmI.java``` and put the following contents into it:
 ![Image](6.jpg)
   
@@ -58,7 +58,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 * Now you can run it on the `ieng6` computer using `javac` and `java` :)  
 
->**Setting an SSH Key**
+# **Setting SSH Keys**
 * Set up `ssh` keys on your computer:
 ![Image](10.jpg)
   
@@ -75,7 +75,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ![Image](14.jpg)
 ![Image](15.jpg)
 
->**Optimizing Remote Running**
+# **Optimizing Remote Running**
 * Make a ***local edit*** to `WhereAmI.java` (On your computer):
 ![Image](18.jpg)
 
