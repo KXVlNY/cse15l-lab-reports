@@ -3,14 +3,14 @@
 **Lab Report #1**
 --------------------------
 > **Installing** ***VSCode***
-* Go to the **Visual Studio Code** website: (https://code.visualstudio.com/)
+* Go to the **Visual Studio Code** website: [Link](https://code.visualstudio.com/)
 * Download and install it on your computer **(Choose your *OS*)**
 * Once it is installed, you should be able to open a window like this: 
 ![Image](1.jpg)
 
 > **Remotely Connecting**
-* If you use **Windows**, you **MUST** install a program called **OpenSSH**: https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
-* Search your course-specific account for CSE15L and **RESET** your password for that account here: https://sdacs.ucsd.edu/~icc/index.php
+* If you use **Windows**, you **MUST** install a program called **OpenSSH**: [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+* Search your course-specific account for CSE15L and **RESET** your password for that account here: [Link](https://sdacs.ucsd.edu/~icc/index.php)
 * The reset can take anywhere **from 1 minute to 20 minutes** to start working, so please be patient. Your lab account should look like this format: **cs15lwi22zz@ieng6.ucsd.edu** (replace **"zz"** with the letters in yours)
 * Open a terminal in the **VSCode** (Ctrl or Command + **`**, or use the **Terminal → New Terminal menu option**).
 * Type ```ssh cs15lwi22zz@ieng6.ucsd.edu```on the terminal (Replace ```zz``` with the letters in yours)
