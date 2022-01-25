@@ -2,6 +2,7 @@
 ># **Kevin Kang** 
 ># **Lab Report #1**
 -------------------------------------------------------------------------------------
+
 # **Installing VSCode**
 * Go to the **Visual Studio Code** website: [Visual Studio Code Website](https://code.visualstudio.com/)
 * Download and install it on your computer **(Choose your *OS*)**
