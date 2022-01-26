@@ -83,5 +83,5 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 * Compile a file on your local computer
 * Copy a file to the remote server
 * Compile and run a file on the remote server
-* Keystrokes: 4 
+* Keystrokes: 5
 ![Image](17.jpg)
