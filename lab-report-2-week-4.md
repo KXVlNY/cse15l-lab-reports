@@ -46,3 +46,28 @@ In this second example, the JUnit tester was implemented in order to improve eff
 The bug's symptoms were indicated by the error messages caused by implementing those testing methods, saying that those methods must be caught/thrown. As a result, the bug was then detected *(we did not throw IOException for the method)*.
 
 ***
+
+## **Implementation of Third Test**
+First Change:
+![Example3](example3.jpg)
+
+[Error-Causing Test](https://github.com/KXVlNY/markdown-parse/commit/9f13c4b9a703ef8374aef408b1e8cb28cb5fc71f)
+
+### **Output/Symptom of the Error:**
+
+```
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+# ... infinite loop
+```
+
+In this last example, we tried to fix the bug discovered in the *first problem*. We tried a more comprehensive test in test-file2.md, where it had parentheses inside the link. 
+
+We believed that the **symptom** (infinite -1 loop) was because currentIndex would end up not being found, returning -1 for currentIndex and then adding +1 would make it = 0, therefore never breaking from the while loop. Therefore, we tried to check if currentIndex was <0, then to break away from the loop. 
+
+However, the same symptoms appeared (with an infinite loop) as a result from *this test*, therefore leaving us to believe that the **same bug still remained** from the first test implementation.
