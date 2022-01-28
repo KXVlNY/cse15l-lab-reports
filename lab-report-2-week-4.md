@@ -17,7 +17,7 @@ Current index is: 36
 
 ```
 
-In this first example, **underlying bug was detected by the symptoms of the failure-inducing input**. 
+In this first example, underlying bug was detected by the symptoms of the **failure-inducing input**. 
 
 In other words, the only way to detect if there was an underlying problem in the code was to first check if such problem-inducing inputs can cause an issue, where in this case the infinite loop between `-1` and `Current index is: 36` was the resulting symptom from that input. 
 
@@ -41,7 +41,7 @@ MarkdownParseTest.java:16: error: unreported exception IOException; must be caug
 
 ```
 
-In this second example, the JUnit tester was implemented in order to improve efficiency with testing, and tried to use the markdown files as the test. *However, implemented the tester ended up being part of one of the tests as well.* **In attempt to fix our bug, we found another bug!**
+In this second example, the JUnit tester was implemented in order to improve efficiency with testing, and tried to use the markdown files as the test. However, implemented the tester ended up being part of one of the tests as well. **In attempt to fix our bug, we found another bug!**
 
 The bug's symptoms were indicated by the error messages caused by implementing those testing methods, saying that those methods must be caught/thrown. As a result, the bug was then detected *(we did not throw IOException for the method)*.
 
