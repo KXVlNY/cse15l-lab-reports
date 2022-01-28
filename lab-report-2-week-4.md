@@ -23,3 +23,26 @@ In other words, the only way to detect if there was an underlying problem in the
 
 It shows that there is an underlying issue *(a bug!)* with the code that causes these symptoms.
 ***
+
+## **Implementation of Second Test**
+
+![Example 2](example2.jpg)
+
+[Error-Causing Test: (Link)]
+
+### **Output/Symptom of the Error:**
+
+```
+PS C:\Users\dsk81\OneDrive\Documents\GitHub\markdown-parse> javac -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" MarkdownParseTest.java
+MarkdownParseTest.java:16: error: unreported exception IOException; must be caught or declared to be thrown
+            String contents = Files.readString(fileName);
+                                              ^
+1 error
+
+```
+
+In this second example, the JUnit tester was implemented in order to improve efficiency with testing, and tried to use the markdown files as the test. *However, implemented the tester ended up being part of one of the tests as well.* **In attempt to fix our bug, we found another bug!**
+
+The bug's symptoms were indicated by the error messages caused by implementing those testing methods, saying that those methods must be caught/thrown. As a result, the bug was then detected *(we did not throw IOException for the method)*.
+
+***
