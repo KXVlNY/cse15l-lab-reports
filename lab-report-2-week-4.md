@@ -1,9 +1,9 @@
 # Lab Report 2: When Tests Accumulate
 
 ## **Implementation of First Test**
-![Example 1](Infinity.jpg)
+![Example1](Infinity.jpg)
 
-[Error-Causing Test](https://github.com/KXVlNY/markdown-parse/commit/491fedb66d3d9288a52c1fb68ce2626ebdc6445e)
+[Error-Causing Test1](https://github.com/KXVlNY/markdown-parse/commit/491fedb66d3d9288a52c1fb68ce2626ebdc6445e)
 
 ### **Output/Symptom of the Error:**
 ```
@@ -26,9 +26,9 @@ It shows that there is an underlying issue *(a bug!)* with the code that causes 
 
 ## **Implementation of Second Test**
 
-![Example 2](example2.jpg)
+![Example2](example2.jpg)
 
-[Error-Causing Test: (Link)]
+[Error-Causing Test2](https://github.com/KXVlNY/markdown-parse/commit/41d634f0afecf7263cce77f26aaa640fc9871ba2)
 
 ### **Output/Symptom of the Error:**
 
