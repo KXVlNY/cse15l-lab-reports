@@ -48,7 +48,7 @@ The bug's symptoms were indicated by the error messages caused by implementing t
 ***
 
 ## **Implementation of Third Test**
-First Change:
+
 ![Example3](example3.jpg)
 
 [Error-Causing Test](https://github.com/KXVlNY/markdown-parse/commit/9f13c4b9a703ef8374aef408b1e8cb28cb5fc71f)
