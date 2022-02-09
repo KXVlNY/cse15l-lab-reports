@@ -51,6 +51,10 @@ The bug's symptoms were indicated by the error messages caused by implementing t
 
 ![Example3](example3.jpg)
 
+But then quickly changed to: 
+
+![Example4](update2.png)
+
 [Error-Causing Test](https://github.com/KXVlNY/markdown-parse/commit/9f13c4b9a703ef8374aef408b1e8cb28cb5fc71f)
 
 ### **Output/Symptom of the Error:**
