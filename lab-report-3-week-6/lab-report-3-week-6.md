@@ -2,13 +2,16 @@
 
 ## Setting Up a `./ssh config` File by Using the Git Bash
 
-**This instruction is for **Windows machines ONLY**
+**This instruction is for **Windows machines ONLY****
+
 Generally, in Windows machine, the SSH config file stored in the following location: 
-`/C/Users/PC_USER_NAME/.ssh/`
+`/C/Users/PC_USER_NAME/.ssh/` 
+
 ![Directory](directory.jpg)
 
 Go to the `.ssh` directory `/C/Users/PC_USER_NAME/.ssh/`, 
 click right mouse button and choose **"Git Bash Here"**
+
 ![GitBash](GitBash.jpg)
 
 Create a file named "config" with the following command:
@@ -16,9 +19,12 @@ Create a file named "config" with the following command:
 
 Now open the config file with the command:
 `nano config`
+
 ![touch](touch.jpg)
 
 Now write the following lines inside the config file:
+
+**Replace `cs15lwi22acr` with YOUR username**
 
 ![nano](nano.jpg)
 
