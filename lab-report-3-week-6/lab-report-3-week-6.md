@@ -48,6 +48,6 @@ Now we can use `ssh ieng6` that’s faster and easier to type!
 
 #### Copying a File by Using `scp` Command
 
-Now we can copy a local file to the remote server with the command: `scp isthisworking.md ieng6:~/`
+Also, we can copy a local file to the remote server with the command: `scp isthisworking.md ieng6:~/`
 
 ![scp](scp.jpg)
