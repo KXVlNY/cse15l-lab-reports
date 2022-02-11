@@ -2,7 +2,7 @@
 
 ## Setting Up `./ssh config` by Using the Git Bash
 
-**This instruction is for **Windows machines ONLY****
+**This instruction is for Windows machines ONLY**
 
 Generally, in Windows machine, the SSH config file stored in the following location: 
 `/C/Users/PC_USER_NAME/.ssh/` 
