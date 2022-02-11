@@ -1,6 +1,6 @@
 # Lab Report 3: Streamlining `ssh` Configuration
 
-## Setting Up a `./ssh config` File by Using the Git Bash
+## Setting Up `./ssh config` by Using the Git Bash
 
 **This instruction is for **Windows machines ONLY****
 
@@ -28,9 +28,9 @@ Now write the following lines inside the config file:
 
 ![nano](nano.jpg)
 
-Save the config file with the command: `ctrl + o`
+Save the config file with the command: Ctrl-o
 
-Then, hit `enter`
+Then, press enter
 
 ![configsave](configsave.jpg)
 
@@ -47,4 +47,7 @@ Now we can use `ssh ieng6` that’s faster and easier to type!
 ![sshieng6](sshieng6.jpg)
 
 #### Copying a File by Using `scp` Command
-![Pic1]()
+
+Now we can copy a local file to the remote server with the command: `scp isthisworking.md ieng6:~/`
+
+![scp](scp.jpg)
