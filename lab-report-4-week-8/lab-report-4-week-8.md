@@ -49,7 +49,7 @@ My code in `MarkdownParseTest.java` to test **Snippet 2**:
 
 Output from running JUnit test:
 
-![MySnippet2TestOutput](MySnippet2TestOutput.png)
+![MySnippet2TestOutput](MyTestSnippet2Output.png)
 
 *The test failed
 
