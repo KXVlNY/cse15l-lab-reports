@@ -1,8 +1,8 @@
 # Lab Report 4
 
-*Link to my `markdown-parse` repository:* [My Repository](https://github.com/KXVlNY/markdown-parse)
+Link to my `markdown-parse` repository: [My Repository](https://github.com/KXVlNY/markdown-parse)
 
-*Link to `markdown-parse` repository that I reviewed:* [Reviewed Repository](https://github.com/TheZenMasterz/markdown-parse)
+Link to `markdown-parse` repository that I reviewed: [Reviewed Repository](https://github.com/TheZenMasterz/markdown-parse)
 
 ---
 
@@ -17,7 +17,7 @@ My code in `MarkdownParseTest.java` to test **Snippet 1**:
 ![MyTestSnippet1](MyTestSnippet1.png)
 
 
-### *My implementation*
+### *My Implementation*
 
 Output from running JUnit test:
 
@@ -25,7 +25,7 @@ Output from running JUnit test:
 
 *The test failed
 
-### *Implementation reviewed*
+### *Reviewed Implementation*
 
 Output from running JUnit test:
 
@@ -45,7 +45,7 @@ My code in `MarkdownParseTest.java` to test **Snippet 2**:
 
 ![MyTestSnippet2](MyTestSnippet2.png)
 
-### *My implementation*
+### *My Implementation*
 
 Output from running JUnit test:
 
@@ -53,7 +53,7 @@ Output from running JUnit test:
 
 *The test failed
 
-### *Implementation reviewed*
+### *Reviewed Implementation*
 
 Output from running JUnit test:
 
@@ -73,7 +73,7 @@ My code in `MarkdownParseTest.java` to test **Snippet 3**:
 
 ![MyTestSnippet3](MyTestSnippet3.png)
 
-### *My implementation*
+### *My Implementation*
 
 Output from running JUnit test:
 
@@ -81,7 +81,7 @@ Output from running JUnit test:
 
 *The test failed
 
-### *Implementation reviewed*
+### *Reviewed Implementation*
 
 Output from running JUnit test:
 
