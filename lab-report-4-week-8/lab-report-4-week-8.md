@@ -77,7 +77,7 @@ My code in `MarkdownParseTest.java` to test **Snippet 3**:
 
 Output from running JUnit test:
 
-![MySnippet3TestOutput](MySnippet3TestOutput.png)
+![MySnippet3TestOutput](MyTestSnippet3Output.png)
 
 *The test failed
 
