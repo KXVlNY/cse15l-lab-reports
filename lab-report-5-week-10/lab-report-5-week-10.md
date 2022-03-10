@@ -1,63 +1,109 @@
-# Lab Report 5
+# Week 10: Lab report 5 
 
-To find the tests with different results, I used a bash script to print the results onto a results text file for each parser, and then used `diff` to compare the results of each markdown parser. After that, I picked the files that had differences.
+## How I Found the Tests with Different Results
 
-***
-## **Test 1:**
+First, I get the `result.txt` from the lab 9 repository and compare that to a representative implementation from my group using `diff` command. In particular, I run:
 
-`579.md`
-
-```
-![foo](<url>)
+```bash
+diff -u my-result.txt other-result.txt
 ```
 
-### *My Implementation & Lab 9 Implementation Result:*
+The result would look like this
 
+```bash
+--- my_results.txt      2022-03-10 11:48:49.357747200 -0800
++++ other_results.txt   2022-03-10 11:50:04.441919000 -0800
+@@ -209,7 +209,7 @@
+ test-files/193.md
+ []
+ test-files/194.md
+-[]
++[url]
+ test-files/195.md
+ []
+ test-files/196.md
+@@ -227,7 +227,7 @@
+ test-files/200.md
+ []
+ test-files/201.md
+-[]
++[baz]
+ test-files/202.md
+ []
+ test-files/203.md
+@@ -539,7 +539,7 @@
+ test-files/341.md
+ []
+ test-files/342.md
+-[]
++[/foo`]
+ test-files/343.md
+ []
+ test-files/344.md
 ```
-[<url>]
+
+From this, I can see there are difference in the result in test file `194.md` and test file `201.md`
+
+## Test 1: `194.md`
+
+This is the content of the file itself
+
+```markdown
+[foo*bar\]]: my_(url) "title (with parens)"
+
+[Foo*bar\]]
 ```
 
-I believe that both implementations would be incorrect in this case. In the markdown file used as the test, `579.md`, it is an image, indicated by the exclamation mark. Therefore, we should only print the links when they are actually links, and not images.
+My group implementation output
 
-### *Actual/Expected Output*
-
-```
+```bash
 []
 ```
 
-***
-My Code:
-![MyCode](MyCode.png)
+Lab 9 implementation output
 
-As we can see, my code does not check for an exclamation point in the beginning of the string at all. Instead, we should check if the first character (using substring) is an exclamation point, and then ignore that image in the md.
-
-***
-## **Test 2:**
-
-`567.md`
-
-```
-[foo](not a link)
-
-[foo]: /url1
+```bash
+[url]
 ```
 
-### *My Implementation Result:*
+The correct answer should be
 
+```bash
+[title (with parens)]
 ```
-[not a link]
+
+So both implementation are incorrect. I think I need to watch out for special case of what is considered to be link. In particular, the part I have to fix is:
+
+```java
+final String regex = "(?<!!)(?<!`)\\[(?>[[a-zA-Z0-9 ]&&[^\\n]])+\\]\\((\\S+)\\)";
 ```
 
-### *Lab 9 Implementation Result:*
+## Test 2: `201.md`
 
+This is the content of the file itself
+
+```txt
+[foo]: <bar>(baz)
+
+[foo]
 ```
-[]  <-- (expected/actual result!)
+
+My group implementation output
+
+```bash
+[]
 ```
-I believe that the lab 9 implementation result is actually correct. The testfile should not contain a link because it does not include the standard extensions that one would expect in a link, like `.html` or `.md`. Therefore, it should not produce any links that do not have those extensions, which my code does not detect.
 
-***
-My Code:
+Lab 9 implementation output
 
-![MyCode](MyCode.png)
+```bash
+[baz]
+```
 
-As we can see, my code does not check for any actual links. To fix the above issue, we should add an adidtional check where we check the substring from the openParen+1 to the closeParen, split each link by commas, and then check each String if they include an extension, likely through a .contains() or indexOf() with a string that contains all possible extensions.
+The correct answer should be
+
+```bash
+[]
+```
+
+And my group implementation is correct
