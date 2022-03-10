@@ -8,7 +8,6 @@ To find the tests with different results, I used a bash script to print the resu
 
 ```
 ![foo](<url>)
-
 ```
 
 ### *My Implementation & Lab 9 Implementation Result:*
@@ -27,7 +26,7 @@ I believe that both implementations would be incorrect in this case. In the mark
 
 ***
 My Code:
-![MyCode](lab-report-5-week-10/MyCode.png)
+![MyCode](MyCode.png)
 
 As we can see, my code does not check for an exclamation point in the beginning of the string at all. Instead, we should check if the first character (using substring) is an exclamation point, and then ignore that image in the md.
 
@@ -57,6 +56,6 @@ I believe that the lab 9 implementation result is actually correct. The testfile
 ***
 My Code:
 
-![MyCode](lab-report-5-week-10/MyCode.png)
+![MyCode](MyCode.png)
 
 As we can see, my code does not check for any actual links. To fix the above issue, we should add an adidtional check where we check the substring from the openParen+1 to the closeParen, split each link by commas, and then check each String if they include an extension, likely through a .contains() or indexOf() with a string that contains all possible extensions.
