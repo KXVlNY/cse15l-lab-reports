@@ -2,7 +2,7 @@
 
 ## How I Found the Tests with Different Results
 
-To find the tests with different results, I used a bash script to print the results onto a results text file for each parser, and then used diff to compare the results of each markdown parser. In particular, I run:
+To find the tests with different results, I used a bash script to print the results onto a results text file for each parser, and then used `diff` to compare the results of each markdown parser. In particular, I run:
 
 ```bash
 diff -u my-result.txt other-result.txt
