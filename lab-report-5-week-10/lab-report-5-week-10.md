@@ -1,6 +1,7 @@
 # Lab Report 5
 
 To find the tests with different results, I used a bash script to print the results onto a results text file for each parser, and then used `diff` to compare the results of each markdown parser. After that, I picked the files that had differences.
+
 ***
 ## **Test 1:**
 
@@ -53,6 +54,7 @@ As we can see, my code does not check for an exclamation point in the beginning 
 []  <-- (expected/actual result!)
 ```
 I believe that the lab 9 implementation result is actually correct. The testfile should not contain a link because it does not include the standard extensions that one would expect in a link, like `.html` or `.md`. Therefore, it should not produce any links that do not have those extensions, which my code does not detect.
+
 ***
 My Code:
 
