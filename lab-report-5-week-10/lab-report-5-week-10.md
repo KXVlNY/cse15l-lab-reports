@@ -42,7 +42,7 @@ The result would look like this
  test-files/344.md
 ```
 
-From this, I can see there are difference in the result in test file `194.md` and test file `201.md`
+From this, I can see there are difference in the result in test file `194.md`
 
 ## Test 1: `194.md`
 
@@ -78,32 +78,20 @@ So both implementation are incorrect. I think I need to watch out for special ca
 final String regex = "(?<!!)(?<!`)\\[(?>[[a-zA-Z0-9 ]&&[^\\n]])+\\]\\((\\S+)\\)";
 ```
 
-## Test 2: `201.md`
+## Test 2: `530.md`
 
-This is the content of the file itself
+While my implementation caused the wrong output, the implementation provided in the lab presented the expected output. The expected output is to provide the link `moon.jpg`:
 
-```txt
-[foo]: <bar>(baz)
+![530ExpectedOutput](530Expected.png)
 
-[foo]
-```
+Output when running `diff` at file 530.md:
 
-My group implementation output
+![530Diff](530Diff.png)
 
-```bash
-[]
-```
+The bug in my implementation that causes the wrong output is that my code does not use the closing parenthese to advance the `currentIndex` variable when it sees that the opening parenthese comes before an opening bracket. Instead it uses the closing bracket to advance the `currentIndex` under this condition; therefore causing the wrong output. This is why the output shows multiple `![moon](moon.jpg,` after properly showing just `moon.jpg`. This is because the `currentIndex` is restarted back at the beginning of the line and copies everything between the opening bracket and closing bracket. 
 
-Lab 9 implementation output
+Image of the code that needs to be fixed:
 
-```bash
-[baz]
-```
+![530Fix](Fix530.png)
 
-The correct answer should be
-
-```bash
-[]
-```
-
-And my group implementation is correct
+---
