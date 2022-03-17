@@ -80,7 +80,7 @@ final String regex = "(?<!!)(?<!`)\\[(?>[[a-zA-Z0-9 ]&&[^\\n]])+\\]\\((\\S+)\\)"
 
 ## Test 2: `530.md`
 
-While my implementation caused the wrong output, the implementation provided in the lab presented the expected output. The expected output is to provide the link `moon.jpg`:
+While my implementation caused the wrong output, the lab 9 implementation presented the expected output. The expected output is to provide the link `moon.jpg`:
 
 ![530ExpectedOutput](530Expected.png)
 
