@@ -84,7 +84,7 @@ While my implementation caused the wrong output, the implementation provided in 
 
 ![530ExpectedOutput](530Expected.png)
 
-Output when running `diff` at file 530.md:
+Output when running `diff` at file `530.md`:
 
 ![530Diff](530Diff.png)
 
